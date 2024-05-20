@@ -6,10 +6,12 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:3000",
+        target: "https://studentspeakhub.onrender.com",
         secure: false,
       },
     },
   },
   plugins: [react()],
 });
+
+// http://localhost:3000
